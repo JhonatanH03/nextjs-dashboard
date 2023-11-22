@@ -36,7 +36,6 @@ export default function Page() {
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop and mobile versions"
           />
-        <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"/>
         </div>
       </div>
     </main>
