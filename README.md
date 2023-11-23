@@ -4,6 +4,6 @@ This is the starter template for the Next.js App Router Course. It contains the 
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
 
-# Jhonatan Hernandez 20220023
-# Stiven Martinez 20220275
-# Robert Santos 20210956
+## Jhonatan Hernandez 2022-0023
+## Stiven Martinez 2022-0275
+## Robert Santos 2021-0956
