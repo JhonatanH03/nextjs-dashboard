@@ -3,9 +3,14 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 
-export default function Search({ placeholder }: { placeholder: string }) {
+interface SearchProps {
+  placeholder: string;
+  query?: string;  // Añadir la propiedad query opcional
+}
+
+export default function Search({ placeholder, query }: SearchProps) {
   const searchParams = useSearchParams();
-  const pathname = usePathname(); 
+  const pathname = usePathname();
   const { replace } = useRouter();
 
   function handleSearch(term: string) {
@@ -17,6 +22,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     } else {
       params.delete('query');
     }
+
     replace(`${pathname}?${params.toString()}`);
   }
 
@@ -31,7 +37,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
         onChange={(e) => {
           handleSearch(e.target.value);
         }}
-        defaultValue={searchParams.get('query')?.toString()}
+        defaultValue={query || searchParams.get('query')?.toString()}  // Usar query si está definido
       />
       <MagnifyingGlassIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
     </div>
