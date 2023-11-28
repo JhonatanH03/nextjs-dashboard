@@ -5,7 +5,7 @@ import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 
 interface SearchProps {
   placeholder: string;
-  query?: string;  // Añadir la propiedad query opcional
+  query?: string;
 }
 
 export default function Search({ placeholder, query }: SearchProps) {
@@ -37,7 +37,7 @@ export default function Search({ placeholder, query }: SearchProps) {
         onChange={(e) => {
           handleSearch(e.target.value);
         }}
-        defaultValue={query || searchParams.get('query')?.toString()}  // Usar query si está definido
+        defaultValue={query || searchParams.get('query')?.toString()}
       />
       <MagnifyingGlassIcon className="absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
     </div>
