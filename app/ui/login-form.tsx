@@ -1,6 +1,6 @@
 'use client';
 
-import { lusitana } from '@/app/ui/fonts';
+import { lusitana } from '@/src/components/atoms/fonts';
 import {
   AtSymbolIcon,
   KeyIcon,
