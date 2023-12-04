@@ -1,4 +1,4 @@
-import Pagination from '@/app/ui/invoices/pagination';
+import Pagination from '@/src/components/molecules/pagination';
 import Search from '@/app/ui/search';
 import Table from '@/app/ui/invoices/table';
 import { CreateInvoice } from '@/src/components/molecules/buttons';
