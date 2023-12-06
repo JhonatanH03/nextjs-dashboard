@@ -1,5 +1,5 @@
-import Form from '@/src/components/molecules/edit-form';
-import Breadcrumbs from '@/src/components/molecules/breadcrumbs';
+import Form from '@/app/ui/molecules/edit-form';
+import Breadcrumbs from '@/app/ui/molecules/breadcrumbs';
 import { fetchInvoiceById, fetchCustomers } from '@/app/lib/data';
 import { notFound } from 'next/navigation';
  

@@ -1,5 +1,5 @@
-import Form from '@/src/components/molecules/create-form';
-import Breadcrumbs from '@/src/components/molecules/breadcrumbs';
+import Form from '@/app/ui/molecules/create-form';
+import Breadcrumbs from '@/app/ui/molecules/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
  
 export default async function Page() {

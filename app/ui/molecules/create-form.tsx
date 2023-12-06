@@ -8,7 +8,7 @@
     CurrencyDollarIcon,
     UserCircleIcon,
   } from '@heroicons/react/24/outline';
-  import { Button } from '@/src/components/atoms/button';
+  import { Button } from '@/app/ui/atoms/button';
   import { State, createInvoice } from '@/app/lib/actions';
   import { useState } from 'react';
 

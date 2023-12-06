@@ -1,5 +1,5 @@
-import AcmeLogo from '@/src/components/atoms/acme-logo';
-import LoginForm from '@/app/ui/login-form';
+import AcmeLogo from '@/app/ui/atoms/acme-logo';
+import LoginForm from '@/app/ui/molecules/login-form';
  
 export default function LoginPage() {
   return (

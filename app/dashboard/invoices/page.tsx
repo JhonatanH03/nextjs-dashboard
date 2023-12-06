@@ -1,10 +1,10 @@
-import Pagination from '@/src/components/molecules/pagination';
-import Search from '@/app/ui/search';
-import Table from '@/src/components/molecules/table';
-import { CreateInvoice } from '@/src/components/molecules/buttons';
-import { lusitana } from '@/src/components/atoms/fonts';
+import Pagination from '@/app/ui/molecules/pagination';
+import Search from '@/app/ui/molecules/search';
+import Table from '@/app/ui/molecules/table';
+import { CreateInvoice } from '@/app/ui/molecules/buttons';
+import { lusitana } from '@/app/ui/atoms/fonts';
 import { Suspense } from 'react';
-import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
+import { InvoicesTableSkeleton } from '@/app/ui/molecules/skeletons';
 import { fetchInvoicesPages } from '@/app/lib/data';
 import { Metadata } from 'next';
  

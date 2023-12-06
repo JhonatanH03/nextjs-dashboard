@@ -1,13 +1,13 @@
-import CardWrapper from "@/src/components/organisms/cards";
-import RevenueChart from "@/src/components/organisms/revenue-chart";
-import LatestInvoices from "@/src/components/organisms/latest-invoices";
-import { lusitana } from "@/src/components/atoms/fonts";
+import CardWrapper from "@/app/ui/organisms/cards";
+import RevenueChart from "@/app/ui/organisms/revenue-chart";
+import LatestInvoices from "@/app/ui/organisms/latest-invoices";
+import { lusitana } from "@/app/ui/atoms/fonts";
 import { Suspense } from "react";
 import {
   RevenueChartSkeleton,
   LatestInvoicesSkeleton,
   CardSkeleton,
-} from "@/app/ui/skeletons";
+} from "@/app/ui/molecules/skeletons";
 
 export default async function Page() {
   
